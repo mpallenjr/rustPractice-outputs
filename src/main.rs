@@ -1,5 +1,5 @@
 #![allow(unused)]
 fn main() {
-let x = 42;
-println!("My lucky number is {}.", x);
+let xs = vec![1, 2, 3];
+println!("The list is: {:?}", xs);
 }
