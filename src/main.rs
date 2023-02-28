@@ -1,5 +1,9 @@
-#![allow(unused)]
 fn main() {
-println!("This is information");
-eprintln!("This is an error! :(");
+    let pb = indicatif::ProgressBar::new(100);
+    for i in 0..100 {
+        do_hard_work();
+        pb.println(format!("[+] finished #{}", i));
+        pb.inc(1);
+    }
+    pb.finish_with_message("done");
 }
