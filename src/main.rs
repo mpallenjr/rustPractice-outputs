@@ -1,3 +1,5 @@
+#![allow(unused)]
 fn main() {
-    println!("Hello, world!");
+let x = 42;
+println!("My lucky number is {}.", x);
 }
